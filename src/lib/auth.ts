@@ -91,14 +91,14 @@ export const authOptions: NextAuthOptions = {
         
         if (dbUser) {
           session.user.id = dbUser.id
-          session.user.role = dbUser.role
+          session.user.role = dbUser.role as 'USER' | 'ADMIN' | 'MODERATOR' | 'EDITOR'
         }
       }
       return session
     },
     async jwt({ token, user, account }) {
       if (user) {
-        token.role = user.role
+        token.role = user.role as 'USER' | 'ADMIN' | 'MODERATOR' | 'EDITOR'
       }
       return token
     },
