@@ -1,0 +1,159 @@
+{
+  "timestamp": "2025-09-06T10:08:30.049Z",
+  "summary": {
+    "total": 35,
+    "passed": 33,
+    "failed": 2,
+    "successRate": "94.29%"
+  },
+  "errors": [
+    "1 alt attribute bulundu",
+    "2 component import kullanımı"
+  ],
+  "recommendations": [
+    "Tüm img elementlerinde alt attribute kullanılmalı.",
+    "Daha fazla component reuse edilmeli."
+  ],
+  "details": [
+    {
+      "status": "PASS",
+      "message": "UI component mevcut: button.tsx"
+    },
+    {
+      "status": "PASS",
+      "message": "UI component mevcut: card.tsx"
+    },
+    {
+      "status": "PASS",
+      "message": "UI component mevcut: input.tsx"
+    },
+    {
+      "status": "PASS",
+      "message": "UI component mevcut: textarea.tsx"
+    },
+    {
+      "status": "PASS",
+      "message": "UI component mevcut: avatar.tsx"
+    },
+    {
+      "status": "PASS",
+      "message": "Feature component klasörü mevcut: comments"
+    },
+    {
+      "status": "PASS",
+      "message": "Feature component klasörü mevcut: layout"
+    },
+    {
+      "status": "PASS",
+      "message": "Feature component klasörü mevcut: blog"
+    },
+    {
+      "status": "PASS",
+      "message": "Feature component klasörü mevcut: contact"
+    },
+    {
+      "status": "PASS",
+      "message": "Component'lerin %90+ uygun export yapısına sahip"
+    },
+    {
+      "status": "PASS",
+      "message": "Dosyaların %100.0'i TypeScript kullanıyor"
+    },
+    {
+      "status": "PASS",
+      "message": "42 interface/type tanımı bulundu"
+    },
+    {
+      "status": "PASS",
+      "message": "Component'lerin %70+ props typing kullanıyor"
+    },
+    {
+      "status": "FAIL",
+      "message": "1 alt attribute bulundu"
+    },
+    {
+      "status": "PASS",
+      "message": "8 aria-label attribute bulundu"
+    },
+    {
+      "status": "PASS",
+      "message": "20 semantic HTML element bulundu"
+    },
+    {
+      "status": "PASS",
+      "message": "51 heading elementi bulundu"
+    },
+    {
+      "status": "PASS",
+      "message": "108 responsive class kullanımı bulundu"
+    },
+    {
+      "status": "PASS",
+      "message": "335 flexbox kullanımı bulundu"
+    },
+    {
+      "status": "PASS",
+      "message": "Viewport meta tag mevcut"
+    },
+    {
+      "status": "PASS",
+      "message": "5 dynamic import kullanımı bulundu"
+    },
+    {
+      "status": "PASS",
+      "message": "19 memoization kullanımı bulundu"
+    },
+    {
+      "status": "PASS",
+      "message": "1 Next.js Image component kullanımı"
+    },
+    {
+      "status": "PASS",
+      "message": "2 form elementi bulundu"
+    },
+    {
+      "status": "PASS",
+      "message": "44 input validation kullanımı"
+    },
+    {
+      "status": "PASS",
+      "message": "11 React Hook Form kullanımı"
+    },
+    {
+      "status": "PASS",
+      "message": "5 sayfa metadata export'u bulundu"
+    },
+    {
+      "status": "PASS",
+      "message": "30 title tanımı bulundu"
+    },
+    {
+      "status": "PASS",
+      "message": "34 description tanımı bulundu"
+    },
+    {
+      "status": "PASS",
+      "message": "1152 tutarlı renk kullanımı"
+    },
+    {
+      "status": "PASS",
+      "message": "336 tutarlı spacing kullanımı"
+    },
+    {
+      "status": "FAIL",
+      "message": "2 component import kullanımı"
+    },
+    {
+      "status": "PASS",
+      "message": "English locale klasörü mevcut (/en)"
+    },
+    {
+      "status": "PASS",
+      "message": "4 English route dosyası bulundu"
+    },
+    {
+      "status": "PASS",
+      "message": "18 dosyada Türkçe içerik bulundu"
+    }
+  ]
+}

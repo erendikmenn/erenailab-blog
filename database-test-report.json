@@ -1,0 +1,172 @@
+{
+  "timestamp": "2025-09-06T09:22:07.152Z",
+  "summary": {
+    "total": 40,
+    "passed": 40,
+    "failed": 0,
+    "successRate": "100.00%"
+  },
+  "errors": [],
+  "details": [
+    {
+      "status": "PASS",
+      "message": "Raw SQL sorgusu çalışıyor"
+    },
+    {
+      "status": "PASS",
+      "message": "Gerekli tablolar mevcut"
+    },
+    {
+      "status": "PASS",
+      "message": "Kullanıcı oluşturma"
+    },
+    {
+      "status": "PASS",
+      "message": "Email benzersizlik kontrolü"
+    },
+    {
+      "status": "PASS",
+      "message": "Kullanıcı güncelleme"
+    },
+    {
+      "status": "PASS",
+      "message": "Kullanıcı bulma (email ile)"
+    },
+    {
+      "status": "PASS",
+      "message": "Yorum oluşturma"
+    },
+    {
+      "status": "PASS",
+      "message": "Cevap yorumu oluşturma"
+    },
+    {
+      "status": "PASS",
+      "message": "Yorum ve ilişkiler bulma"
+    },
+    {
+      "status": "PASS",
+      "message": "Post yorumları ve cevapları bulma"
+    },
+    {
+      "status": "PASS",
+      "message": "Yorum beğenme"
+    },
+    {
+      "status": "PASS",
+      "message": "Yorum beğenmeme"
+    },
+    {
+      "status": "PASS",
+      "message": "Duplicate like engelleme"
+    },
+    {
+      "status": "PASS",
+      "message": "Like/dislike sayım doğruluğu"
+    },
+    {
+      "status": "PASS",
+      "message": "Admin log kaydı oluşturma"
+    },
+    {
+      "status": "PASS",
+      "message": "Admin log sorgulama"
+    },
+    {
+      "status": "PASS",
+      "message": "Çoklu admin log kayıtları"
+    },
+    {
+      "status": "PASS",
+      "message": "Site ayarı oluşturma"
+    },
+    {
+      "status": "PASS",
+      "message": "JSON türünde ayar oluşturma"
+    },
+    {
+      "status": "PASS",
+      "message": "Site ayarı güncelleme"
+    },
+    {
+      "status": "PASS",
+      "message": "Category ayarları filtreleme"
+    },
+    {
+      "status": "PASS",
+      "message": "Sayfa görüntüleme kaydı oluşturma"
+    },
+    {
+      "status": "PASS",
+      "message": "Anonim sayfa görüntüleme"
+    },
+    {
+      "status": "PASS",
+      "message": "Sayfa görüntüleme sayımı"
+    },
+    {
+      "status": "PASS",
+      "message": "Benzersiz görüntüleyici sayımı"
+    },
+    {
+      "status": "PASS",
+      "message": "Newsletter kaydı oluşturma"
+    },
+    {
+      "status": "PASS",
+      "message": "Newsletter duplicate email engelleme"
+    },
+    {
+      "status": "PASS",
+      "message": "Confirmed newsletter subscriber sayımı"
+    },
+    {
+      "status": "PASS",
+      "message": "Newsletter kaydını confirm etme"
+    },
+    {
+      "status": "PASS",
+      "message": "Kullanıcı-yorum ilişkisi ve data integrity"
+    },
+    {
+      "status": "PASS",
+      "message": "Foreign key constraint kontrolü"
+    },
+    {
+      "status": "PASS",
+      "message": "Derin ilişki sorgusu ve veri bütünlüğü"
+    },
+    {
+      "status": "PASS",
+      "message": "Büyük içerik işleme testi"
+    },
+    {
+      "status": "PASS",
+      "message": "Unicode ve özel karakter desteği"
+    },
+    {
+      "status": "PASS",
+      "message": "Eş zamanlı işlem testi"
+    },
+    {
+      "status": "PASS",
+      "message": "Minimal değer işleme testi"
+    },
+    {
+      "status": "PASS",
+      "message": "Sayfalama ve sıralama testi"
+    },
+    {
+      "status": "PASS",
+      "message": "SQL Injection koruması"
+    },
+    {
+      "status": "PASS",
+      "message": "XSS içerik depolama (sanitizasyon app-level'da)"
+    },
+    {
+      "status": "PASS",
+      "message": "Buffer overflow koruması"
+    }
+  ]
+}

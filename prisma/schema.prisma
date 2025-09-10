@@ -1,0 +1,198 @@
+// Production-ready Prisma schema
+// Development: SQLite, Production: PostgreSQL
+
+generator client {
+  provider = "prisma-client-js"
+  previewFeatures = ["relationJoins"]
+}
+
+datasource db {
+  provider = "sqlite" // Change to "postgresql" for production
+  url      = env("DATABASE_URL")
+  // directUrl = env("DIRECT_URL") // Uncomment for PostgreSQL production
+}
+
+// NextAuth.js required models
+model Account {
+  id                String  @id @default(cuid())
+  userId            String  @map("user_id")
+  type              String
+  provider          String
+  providerAccountId String  @map("provider_account_id")
+  refresh_token     String?
+  access_token      String?
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String?
+  session_state     String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+  @@map("accounts")
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique @map("session_token")
+  userId       String   @map("user_id")
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("sessions")
+}
+
+model User {
+  id            String    @id @default(cuid())
+  name          String?
+  email         String    @unique
+  emailVerified DateTime? @map("email_verified")
+  image         String?
+  role          String    @default("USER") // USER, ADMIN, MODERATOR, EDITOR
+  bio           String?
+  website       String?
+  twitter       String?
+  github        String?
+  linkedin      String?
+  isActive      Boolean   @default(true) @map("is_active")
+  lastLoginAt   DateTime? @map("last_login_at")
+  createdAt     DateTime  @default(now()) @map("created_at")
+  updatedAt     DateTime  @updatedAt @map("updated_at")
+
+  accounts     Account[]
+  sessions     Session[]
+  comments     Comment[]
+  commentLikes CommentLike[]
+  adminLogs    AdminLog[]
+
+  @@map("users")
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+  @@map("verification_tokens")
+}
+
+// Blog and comment system models
+model Comment {
+  id        String        @id @default(cuid())
+  content   String
+  postSlug  String        @map("post_slug")
+  userId    String        @map("user_id")
+  parentId  String?       @map("parent_id")
+  status    String @default("PENDING") // PENDING, APPROVED, REJECTED, SPAM, HIDDEN
+  ipAddress String?       @map("ip_address") // For moderation
+  userAgent String?       @map("user_agent") // For security
+  createdAt DateTime      @default(now()) @map("created_at")
+  updatedAt DateTime      @updatedAt @map("updated_at")
+
+  user     User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  parent   Comment? @relation("CommentReplies", fields: [parentId], references: [id], onDelete: Cascade)
+  replies  Comment[] @relation("CommentReplies")
+  likes    CommentLike[]
+
+  @@index([postSlug])
+  @@index([userId])
+  @@index([parentId])
+  @@index([createdAt])
+  @@index([status])
+  @@map("comments")
+}
+
+model CommentLike {
+  id        String   @id @default(cuid())
+  userId    String   @map("user_id")
+  commentId String   @map("comment_id")
+  type      String // LIKE, DISLIKE
+  createdAt DateTime @default(now()) @map("created_at")
+
+  user    User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  comment Comment @relation(fields: [commentId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, commentId])
+  @@index([commentId])
+  @@map("comment_likes")
+}
+
+model Translation {
+  id          String   @id @default(cuid())
+  contentSlug String   @map("content_slug")
+  language    String
+  title       String?
+  content     String
+  abstract    String?
+  cachedAt    DateTime @default(now()) @map("cached_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  @@unique([contentSlug, language])
+  @@index([contentSlug])
+  @@index([language])
+  @@map("translations")
+}
+
+model Newsletter {
+  id          String    @id @default(cuid())
+  email       String    @unique
+  confirmed   Boolean   @default(false)
+  token       String?   @unique // For confirmation
+  unsubscribed Boolean  @default(false)
+  source      String?   // Where they subscribed from
+  createdAt   DateTime  @default(now()) @map("created_at")
+  updatedAt   DateTime  @updatedAt @map("updated_at")
+
+  @@index([email])
+  @@index([confirmed])
+  @@map("newsletters")
+}
+
+// Admin and moderation models
+model AdminLog {
+  id        String   @id @default(cuid())
+  userId    String   @map("user_id")
+  action    String   // "comment_approved", "comment_rejected", etc.
+  targetId  String?  @map("target_id") // ID of affected resource
+  targetType String? @map("target_type") // "comment", "user", etc.
+  details   String?    // Additional details as JSON string
+  ipAddress String?  @map("ip_address")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([action])
+  @@index([createdAt])
+  @@map("admin_logs")
+}
+
+model SiteSettings {
+  id        String   @id @default(cuid())
+  key       String   @unique
+  value     String
+  type      String   // "string", "number", "boolean", "json"
+  category  String   // "general", "seo", "security", etc.
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@index([category])
+  @@map("site_settings")
+}
+
+// Analytics and monitoring
+model PageView {
+  id        String   @id @default(cuid())
+  slug      String
+  ipAddress String   @map("ip_address")
+  userAgent String?  @map("user_agent")
+  referer   String?
+  country   String?
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@index([slug])
+  @@index([createdAt])
+  @@map("page_views")
+}

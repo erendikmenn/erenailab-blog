@@ -1,0 +1,2 @@
+# Remove vercel.json - using environment variables from dashboard instead
+vercel.json

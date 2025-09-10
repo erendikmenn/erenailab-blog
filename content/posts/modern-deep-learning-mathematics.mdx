@@ -1,0 +1,46 @@
+---
+title: "Modern Deep Learning Mimarilerinin Matematiksel Temelleri"
+description: "Transformer, ResNet ve diğer modern derin öğrenme mimarilerinin matematiksel analizini ve teorik temellerini derinlemesine inceleyelim."
+date: "2024-01-15"
+category: "theoretical-ai"
+tags: ["deep-learning", "mathematics", "transformer", "neural-networks"]
+author: "Eren"
+featured: true
+---
+
+# Modern Deep Learning Mimarilerinin Matematiksel Temelleri
+
+Yapay zeka alanındaki en büyük atılımlardan biri olan modern derin öğrenme mimarileri, karmaşık matematiksel temellere dayanır. Bu yazıda, günümüzün en etkili modellerinin arkasındaki matematiksel prensipleri keşfedeceğiz.
+
+## Transformer Mimarisinin Matematik Analizi
+
+Transformer mimarisi, 2017 yılında "Attention Is All You Need" makalesiyle tanıtıldıktan sonra doğal dil işleme alanında devrim yarattı.
+
+### Self-Attention Mekanizması
+
+Self-attention'ın matematiksel formülasyonu:
+
+$$
+\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
+$$
+
+Burada:
+- $Q$ (Query): $\mathbb{R}^{n \times d_k}$
+- $K$ (Key): $\mathbb{R}^{n \times d_k}$  
+- $V$ (Value): $\mathbb{R}^{n \times d_v}$
+
+### Multi-Head Attention
+
+Multi-head attention, farklı representation alt uzaylarından bilgi toplar:
+
+$$
+\text{MultiHead}(Q, K, V) = \text{Concat}(\text{head}_1, ..., \text{head}_h)W^O
+$$
+
+Her bir head için:
+
+$$
+\text{head}_i = \text{Attention}(QW_i^Q, KW_i^K, VW_i^V)
+$$
+
+Bu yazı, yapay zeka alanındaki matematiksel temelleri anlamaya yönelik ErenAILab serisinin bir parçasıdır.

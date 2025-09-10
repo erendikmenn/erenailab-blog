@@ -1,0 +1,188 @@
+{
+  "timestamp": "2025-09-06T09:22:16.161Z",
+  "summary": {
+    "total": 15,
+    "passed": 14,
+    "failed": 2,
+    "successRate": "93.33%"
+  },
+  "metrics": {
+    "Production Dependencies": {
+      "value": 37,
+      "unit": ""
+    },
+    "Development Dependencies": {
+      "value": 12,
+      "unit": ""
+    },
+    "productionDeps": 37,
+    "devDeps": 12,
+    "hasNextConfig": true,
+    "hasOptimizations": true,
+    "Source Code Size": {
+      "value": 0.17,
+      "unit": "MB"
+    },
+    "sourceSize": 0.17,
+    "Total Files": {
+      "value": 38,
+      "unit": ""
+    },
+    "Components": {
+      "value": 0,
+      "unit": ""
+    },
+    "Pages": {
+      "value": 0,
+      "unit": ""
+    },
+    "Lines of Code": {
+      "value": 4943,
+      "unit": ""
+    },
+    "totalLOC": 4943,
+    "Average File Size": {
+      "value": 130,
+      "unit": " lines"
+    },
+    "avgFileSize": 130,
+    "node_modules Size": {
+      "value": 0.73,
+      "unit": "GB"
+    },
+    "nodeModulesSize": 0.73,
+    "Installed Packages": {
+      "value": 611,
+      "unit": ""
+    },
+    "packageCount": 611,
+    "package-lock.json Size": {
+      "value": 0.42,
+      "unit": "MB"
+    },
+    "lockFileSize": 0.42,
+    "Heap Used": {
+      "value": 5.59,
+      "unit": "MB"
+    },
+    "Heap Total": {
+      "value": 9.06,
+      "unit": "MB"
+    },
+    "heapUsed": 5.59,
+    "CPU Cores": {
+      "value": 16,
+      "unit": ""
+    },
+    "Total Memory": {
+      "value": 14,
+      "unit": "GB"
+    },
+    "Free Memory": {
+      "value": 3,
+      "unit": "GB"
+    },
+    "freeMemory": 3,
+    "globals.css Size": {
+      "value": 1.12,
+      "unit": "KB"
+    },
+    "cssSize": 1.12,
+    "Image Files": {
+      "value": 0,
+      "unit": ""
+    },
+    "Total Functions": {
+      "value": 73,
+      "unit": ""
+    },
+    "Total Classes": {
+      "value": 2,
+      "unit": ""
+    },
+    "TODO Comments": {
+      "value": 0,
+      "unit": ""
+    },
+    "FIXME Comments": {
+      "value": 0,
+      "unit": ""
+    },
+    "Average Complexity": {
+      "value": 15.22,
+      "unit": ""
+    },
+    "avgComplexity": 15.22,
+    "fixmeCount": 0,
+    "Total Test Time": {
+      "value": 7,
+      "unit": "s"
+    }
+  },
+  "errors": [
+    "Build hatası: Command failed with code 1: Failed to compile.\n\n./src/lib/validation.ts\nModule not found: Can't resolve 'isomorphic-dompurify'\n\nhttps://nextjs.org/docs/messages/module-not-found\n\nImport trace for requested module:\n./src/app/api/comments/route.ts\n\n\n> Build failed because of webpack errors\n",
+    "Ortalama kod karmaşıklığı kabul edilebilir: 15.22"
+  ],
+  "details": [
+    {
+      "status": "PASS",
+      "message": "Production dependency sayısı kabul edilebilir: 37"
+    },
+    {
+      "status": "PASS",
+      "message": "Development dependency sayısı kabul edilebilir: 12"
+    },
+    {
+      "status": "PASS",
+      "message": "Next.js config dosyası mevcut"
+    },
+    {
+      "status": "PASS",
+      "message": "Performance optimizasyonları yapılandırılmış"
+    },
+    {
+      "status": "PASS",
+      "message": "Kaynak kod boyutu kabul edilebilir: 0.17MB"
+    },
+    {
+      "status": "PASS",
+      "message": "Lines of code kabul edilebilir: 4943"
+    },
+    {
+      "status": "PASS",
+      "message": "Ortalama dosya boyutu kabul edilebilir: 130 lines"
+    },
+    {
+      "status": "PASS",
+      "message": "node_modules boyutu kabul edilebilir: 0.73GB"
+    },
+    {
+      "status": "PASS",
+      "message": "Yüklü paket sayısı kabul edilebilir: 611"
+    },
+    {
+      "status": "PASS",
+      "message": "package-lock.json boyutu kabul edilebilir: 0.42MB"
+    },
+    {
+      "status": "PASS",
+      "message": "Heap kullanımı kabul edilebilir: 5.59MB"
+    },
+    {
+      "status": "PASS",
+      "message": "Yeterli boş memory mevcut: 3GB"
+    },
+    {
+      "status": "PASS",
+      "message": "CSS dosya boyutu kabul edilebilir: 1.12KB"
+    },
+    {
+      "status": "FAIL",
+      "message": "Ortalama kod karmaşıklığı kabul edilebilir: 15.22"
+    },
+    {
+      "status": "PASS",
+      "message": "FIXME yorumu sayısı: 0"
+    }
+  ]
+}

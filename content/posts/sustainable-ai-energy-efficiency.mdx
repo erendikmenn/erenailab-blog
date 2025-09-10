@@ -1,0 +1,67 @@
+---
+title: "Sürdürülebilir Yapay Zeka: Enerji Verimliliği ve Yeşil AI"
+description: "AI modellerinin enerji tüketimi sorununa odaklanarak, sürdürülebilir yapay zeka geliştirme stratejilerini ve yenilikçi çözümleri inceleyelim."
+date: "2024-01-10"
+category: "energy-sustainability"
+tags: ["sustainability", "energy-efficiency", "green-ai", "carbon-footprint"]
+author: "Eren"
+featured: false
+---
+
+# Sürdürülebilir Yapay Zeka: Enerji Verimliliği ve Yeşil AI
+
+Yapay zeka modellerinin büyüklüğü ve karmaşıklığı arttıkça, enerji tüketimi de kritik bir sorun haline geliyor. Bu yazıda, sürdürülebilir AI geliştirmenin önemini ve pratik çözümlerini ele alacağız.
+
+## AI'nın Karbon Ayak İzi
+
+### GPT Modellerin Enerji Tüketimi
+
+Son araştırmalar gösteriyor ki:
+- GPT-3 eğitimi: ~1,287 MWh
+- Karbon emisyonu: ~552 ton CO2
+- Bu, ortalama bir arabanın 120 yıllık emisyonuna eşit
+
+### Training vs Inference Maliyetleri
+
+```python
+# Enerji tüketimi hesaplama örneği
+def calculate_energy_consumption(model_params, training_hours, gpu_power_watts):
+    """
+    AI modeli enerji tüketimi hesaplama
+    """
+    total_energy_kwh = (gpu_power_watts * training_hours) / 1000
+    co2_emissions_kg = total_energy_kwh * 0.5  # Ortalama grid emisyon faktörü
+    
+    return {
+        'energy_kwh': total_energy_kwh,
+        'co2_kg': co2_emissions_kg,
+        'cost_usd': total_energy_kwh * 0.10  # Ortalama elektrik fiyatı
+    }
+
+# Örnek hesaplama
+result = calculate_energy_consumption(
+    model_params=175e9,  # GPT-3 parametreleri
+    training_hours=1000,
+    gpu_power_watts=300
+)
+print(f"Enerji: {result['energy_kwh']} kWh")
+print(f"CO2: {result['co2_kg']} kg")
+```
+
+## Yeşil AI Stratejileri
+
+### 1. Model Optimizasyonu
+
+- **Pruning**: Gereksiz parametreleri kaldırma
+- **Quantization**: Düşük hassasiyetli hesaplama
+- **Knowledge Distillation**: Büyük modelden küçük modele bilgi aktarımı
+
+### 2. Efficient Architectures
+
+MobileNet, EfficientNet gibi energy-aware mimariler:
+
+$$
+\text{Efficiency} = \frac{\text{Accuracy}}{\text{Energy Consumption}}
+$$
+
+Bu yazı, sürdürülebilir AI geliştirme konusunda farkındalık yaratmayı amaçlar.

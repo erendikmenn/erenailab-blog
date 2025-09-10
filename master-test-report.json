@@ -1,0 +1,242 @@
+{
+  "timestamp": "2025-09-06T09:22:06.353Z",
+  "totalTestSuites": 4,
+  "passedSuites": 1,
+  "failedSuites": 3,
+  "totalTests": 90,
+  "passedTests": 82,
+  "failedTests": 10,
+  "suiteResults": [
+    {
+      "suite": "test-database-comprehensive.js",
+      "description": "Database Comprehensive Tests",
+      "exitCode": 0,
+      "duration": 1,
+      "success": true,
+      "stdout": "\u001b[1m🚀 ErenAILab Blog - Kapsamlı Veritabanı Test Paketi Başlatılıyor...\u001b[0m\n\u001b[34m═══════════════════════════════════════════════════════════════\u001b[0m\n\u001b[34m\n=== VERİTABANI TEST KURULUMU ===\u001b[0m\n\u001b[32m✓ Veritabanı bağlantısı başarılı\u001b[0m\n\u001b[32m✓ Önceki test verileri temizlendi\u001b[0m\n\u001b[33m\n--- Bağlantı Testleri ---\u001b[0m\n\u001b[32m✓ Raw SQL sorgusu çalışıyor\u001b[0m\n\u001b[32m✓ Gerekli tablolar mevcut\u001b[0m\n\u001b[33m\n--- User Model Testleri ---\u001b[0m\n\u001b[32m✓ Kullanıcı oluşturma\u001b[0m\n\u001b[32m✓ Email benzersizlik kontrolü\u001b[0m\n\u001b[32m✓ Kullanıcı güncelleme\u001b[0m\n\u001b[32m✓ Kullanıcı bulma (email ile)\u001b[0m\n\u001b[33m\n--- Comment Model Testleri ---\u001b[0m\n\u001b[32m✓ Yorum oluşturma\u001b[0m\n\u001b[32m✓ Cevap yorumu oluşturma\u001b[0m\n\u001b[32m✓ Yorum ve ilişkiler bulma\u001b[0m\n\u001b[32m✓ Post yorumları ve cevapları bulma\u001b[0m\n\u001b[33m\n--- Comment Like Model Testleri ---\u001b[0m\n\u001b[32m✓ Yorum beğenme\u001b[0m\n\u001b[32m✓ Yorum beğenmeme\u001b[0m\n\u001b[32m✓ Duplicate like engelleme\u001b[0m\n\u001b[32m✓ Like/dislike sayım doğruluğu\u001b[0m\n\u001b[33m\n--- Admin Log Model Testleri ---\u001b[0m\n\u001b[32m✓ Admin log kaydı oluşturma\u001b[0m\n\u001b[32m✓ Admin log sorgulama\u001b[0m\n\u001b[32m✓ Çoklu admin log kayıtları\u001b[0m\n\u001b[33m\n--- Site Settings Model Testleri ---\u001b[0m\n\u001b[32m✓ Site ayarı oluşturma\u001b[0m\n\u001b[32m✓ JSON türünde ayar oluşturma\u001b[0m\n\u001b[32m✓ Site ayarı güncelleme\u001b[0m\n\u001b[32m✓ Category ayarları filtreleme\u001b[0m\n\u001b[33m\n--- Page View Model Testleri ---\u001b[0m\n\u001b[32m✓ Sayfa görüntüleme kaydı oluşturma\u001b[0m\n\u001b[32m✓ Anonim sayfa görüntüleme\u001b[0m\n\u001b[32m✓ Sayfa görüntüleme sayımı\u001b[0m\n\u001b[32m✓ Benzersiz görüntüleyici sayımı\u001b[0m\n\u001b[33m\n--- Newsletter Model Testleri ---\u001b[0m\n\u001b[32m✓ Newsletter kaydı oluşturma\u001b[0m\n\u001b[32m✓ Newsletter duplicate email engelleme\u001b[0m\n\u001b[32m✓ Confirmed newsletter subscriber sayımı\u001b[0m\n\u001b[32m✓ Newsletter kaydını confirm etme\u001b[0m\n\u001b[33m\n--- İlişki ve Veri Bütünlüğü Testleri ---\u001b[0m\n\u001b[32m✓ Kullanıcı-yorum ilişkisi ve data integrity\u001b[0m\n\u001b[32m✓ Foreign key constraint kontrolü\u001b[0m\n\u001b[32m✓ Derin ilişki sorgusu ve veri bütünlüğü\u001b[0m\n\u001b[33m\n--- Performans ve Sınır Durum Testleri ---\u001b[0m\n\u001b[32m✓ Büyük içerik işleme testi\u001b[0m\n\u001b[32m✓ Unicode ve özel karakter desteği\u001b[0m\n\u001b[32m✓ Eş zamanlı işlem testi\u001b[0m\n\u001b[32m✓ Minimal değer işleme testi\u001b[0m\n\u001b[32m✓ Sayfalama ve sıralama testi\u001b[0m\n\u001b[33m\n--- Güvenlik Testleri ---\u001b[0m\n\u001b[32m✓ SQL Injection koruması\u001b[0m\n\u001b[32m✓ XSS içerik depolama (sanitizasyon app-level'da)\u001b[0m\n\u001b[32m✓ Buffer overflow koruması\u001b[0m\n\u001b[32m✓ Veritabanı bağlantısı kapatıldı\u001b[0m\n\u001b[34m\n═══════════════════════════════════════════════════════════════\u001b[0m\n\u001b[1m📊 TEST SONUÇLARI RAPORU\u001b[0m\n\u001b[34m═══════════════════════════════════════════════════════════════\u001b[0m\n\u001b[33m\n📈 Genel İstatistikler:\u001b[0m\n\u001b[0m   Toplam Test: 40\u001b[0m\n\u001b[32m   Başarılı: 40\u001b[0m\n\u001b[32m   Başarısız: 0\u001b[0m\n\u001b[32m   Başarı Oranı: %100.00\u001b[0m\n\u001b[34m\n📋 Detaylı rapor kaydedildi: C:\\Users\\dikme\\OneDrive\\Desktop\\Blog\\erenailab-blog\\database-test-report.json\u001b[0m\n\u001b[32m\n🎉 TÜM TESTLER BAŞARILI! Veritabanı tam olarak çalışıyor.\u001b[0m\n\u001b[34m═══════════════════════════════════════════════════════════════\u001b[0m\n\u001b[1mDatabase test süreci tamamlandı.\u001b[0m\n",
+      "stderr": "",
+      "summary": {
+        "total": 40,
+        "passed": 40,
+        "failed": 0,
+        "successRate": "100.00%"
+      },
+      "recommendations": [],
+      "errors": []
+    },
+    {
+      "suite": "test-ui-ux-comprehensive.js",
+      "description": "UI/UX Components Tests",
+      "exitCode": 1,
+      "duration": 0,
+      "success": false,
+      "stdout": "\u001b[1m🚀 ErenAILab Blog - Kapsamlı UI/UX Test Paketi Başlatılıyor...\u001b[0m\n\u001b[34m═══════════════════════════════════════════════════════════════\u001b[0m\n\u001b[34m\n=== UI/UX TEST KURULUMU ===\u001b[0m\n\u001b[32m✓ 38 dosya tarandı\u001b[0m\n\u001b[32m✓ 13 component dosyası bulundu\u001b[0m\n\u001b[32m✓ 15 page dosyası bulundu\u001b[0m\n\u001b[33m\n--- Component Yapısı Testleri ---\u001b[0m\n\u001b[32m✓ UI component mevcut: button.tsx\u001b[0m\n\u001b[32m✓ UI component mevcut: card.tsx\u001b[0m\n\u001b[32m✓ UI component mevcut: input.tsx\u001b[0m\n\u001b[32m✓ UI component mevcut: textarea.tsx\u001b[0m\n\u001b[32m✓ UI component mevcut: avatar.tsx\u001b[0m\n\u001b[32m✓ Feature component klasörü mevcut: comments\u001b[0m\n\u001b[32m✓ Feature component klasörü mevcut: layout\u001b[0m\n\u001b[32m✓ Feature component klasörü mevcut: blog\u001b[0m\n\u001b[32m✓ Feature component klasörü mevcut: contact\u001b[0m\n\u001b[32m✓ Component'lerin %90+ uygun export yapısına sahip\u001b[0m\n\u001b[33m\n--- TypeScript ve Tip Güvenliği Testleri ---\u001b[0m\n\u001b[32m✓ Dosyaların %100.0'i TypeScript kullanıyor\u001b[0m\n\u001b[32m✓ 40 interface/type tanımı bulundu\u001b[0m\n\u001b[32m✓ Component'lerin %70+ props typing kullanıyor\u001b[0m\n\u001b[33m\n--- Erişilebilirlik Testleri ---\u001b[0m\n\u001b[31m✗ 0 alt attribute bulundu\u001b[0m\n\u001b[33m  💡 Öneri: Tüm img elementlerinde alt attribute kullanılmalı.\u001b[0m\n\u001b[31m✗ 0 aria-label attribute bulundu\u001b[0m\n\u001b[33m  💡 Öneri: Daha fazla interaktif element'te aria-label kullanılmalı.\u001b[0m\n\u001b[32m✓ 20 semantic HTML element bulundu\u001b[0m\n\u001b[32m✓ 50 heading elementi bulundu\u001b[0m\n\u001b[33m\n--- Responsive Design Testleri ---\u001b[0m\n\u001b[32m✓ 99 responsive class kullanımı bulundu\u001b[0m\n\u001b[32m✓ 278 flexbox kullanımı bulundu\u001b[0m\n\u001b[31m✗ Viewport meta tag mevcut\u001b[0m\n\u001b[33m  💡 Öneri: layout.tsx'de viewport meta tag eklenmeli.\u001b[0m\n\u001b[33m\n--- Performans ve Best Practices Testleri ---\u001b[0m\n\u001b[31m✗ 0 dynamic import kullanımı bulundu\u001b[0m\n\u001b[33m  💡 Öneri: Code splitting için daha fazla dynamic import kullanılmalı.\u001b[0m\n\u001b[31m✗ 0 memoization kullanımı bulundu\u001b[0m\n\u001b[33m  💡 Öneri: Performance için React.memo/useMemo kullanılmalı.\u001b[0m\n\u001b[31m✗ 0 Next.js Image component kullanımı\u001b[0m\n\u001b[33m  💡 Öneri: Image optimization için next/image component'i kullanılmalı.\u001b[0m\n\u001b[33m\n--- Form ve Validation Testleri ---\u001b[0m\n\u001b[32m✓ 2 form elementi bulundu\u001b[0m\n\u001b[32m✓ 44 input validation kullanımı\u001b[0m\n\u001b[32m✓ 11 React Hook Form kullanımı\u001b[0m\n\u001b[33m\n--- SEO ve Meta Tag Testleri ---\u001b[0m\n\u001b[32m✓ 5 sayfa metadata export'u bulundu\u001b[0m\n\u001b[32m✓ 30 title tanımı bulundu\u001b[0m\n\u001b[32m✓ 33 description tanımı bulundu\u001b[0m\n\u001b[33m\n--- Design System ve Tutarlılık Testleri ---\u001b[0m\n\u001b[32m✓ 978 tutarlı renk kullanımı\u001b[0m\n\u001b[32m✓ 306 tutarlı spacing kullanımı\u001b[0m\n\u001b[31m✗ 0 component import kullanımı\u001b[0m\n\u001b[33m  💡 Öneri: Daha fazla component reuse edilmeli.\u001b[0m\n\u001b[33m\n--- i18n ve Çok Dillililik Testleri ---\u001b[0m\n\u001b[32m✓ English locale klasörü mevcut (/en)\u001b[0m\n\u001b[32m✓ 4 English route dosyası bulundu\u001b[0m\n\u001b[32m✓ 15 dosyada Türkçe içerik bulundu\u001b[0m\n\u001b[34m\n═══════════════════════════════════════════════════════════════\u001b[0m\n\u001b[1m📊 UI/UX TEST SONUÇLARI RAPORU\u001b[0m\n\u001b[34m═══════════════════════════════════════════════════════════════\u001b[0m\n\u001b[33m\n📈 Genel İstatistikler:\u001b[0m\n\u001b[0m   Toplam Test: 35\u001b[0m\n\u001b[32m   Başarılı: 28\u001b[0m\n\u001b[31m   Başarısız: 7\u001b[0m\n\u001b[33m   Başarı Oranı: %80.00\u001b[0m\n\u001b[31m\n❌ Hatalar:\u001b[0m\n\u001b[31m   1. 0 alt attribute bulundu\u001b[0m\n\u001b[31m   2. 0 aria-label attribute bulundu\u001b[0m\n\u001b[31m   3. Viewport meta tag mevcut\u001b[0m\n\u001b[31m   4. 0 dynamic import kullanımı bulundu\u001b[0m\n\u001b[31m   5. 0 memoization kullanımı bulundu\u001b[0m\n\u001b[31m   6. 0 Next.js Image component kullanımı\u001b[0m\n\u001b[31m   7. 0 component import kullanımı\u001b[0m\n\u001b[33m\n💡 Öneriler (7 adet):\u001b[0m\n\u001b[33m   1. Tüm img elementlerinde alt attribute kullanılmalı.\u001b[0m\n\u001b[33m   2. Daha fazla interaktif element'te aria-label kullanılmalı.\u001b[0m\n\u001b[33m   3. layout.tsx'de viewport meta tag eklenmeli.\u001b[0m\n\u001b[33m   4. Code splitting için daha fazla dynamic import kullanılmalı.\u001b[0m\n\u001b[33m   5. Performance için React.memo/useMemo kullanılmalı.\u001b[0m\n\u001b[33m   6. Image optimization için next/image component'i kullanılmalı.\u001b[0m\n\u001b[33m   7. Daha fazla component reuse edilmeli.\u001b[0m\n\u001b[34m\n📋 Detaylı rapor kaydedildi: C:\\Users\\dikme\\OneDrive\\Desktop\\Blog\\erenailab-blog\\ui-ux-test-report.json\u001b[0m\n\u001b[33m\n⚠️  UI/UX testlerinin çoğu başarılı, ancak iyileştirmeler yapılabilir.\u001b[0m\n\u001b[34m═══════════════════════════════════════════════════════════════\u001b[0m\n\u001b[1mUI/UX test süreci tamamlandı.\u001b[0m\n",
+      "stderr": "",
+      "summary": {
+        "total": 35,
+        "passed": 28,
+        "failed": 7,
+        "successRate": "80.00%"
+      },
+      "recommendations": [
+        "Tüm img elementlerinde alt attribute kullanılmalı.",
+        "Daha fazla interaktif element'te aria-label kullanılmalı.",
+        "layout.tsx'de viewport meta tag eklenmeli.",
+        "Code splitting için daha fazla dynamic import kullanılmalı.",
+        "Performance için React.memo/useMemo kullanılmalı.",
+        "Image optimization için next/image component'i kullanılmalı.",
+        "Daha fazla component reuse edilmeli."
+      ],
+      "errors": [
+        "0 alt attribute bulundu",
+        "0 aria-label attribute bulundu",
+        "Viewport meta tag mevcut",
+        "0 dynamic import kullanımı bulundu",
+        "0 memoization kullanımı bulundu",
+        "0 Next.js Image component kullanımı",
+        "0 component import kullanımı"
+      ]
+    },
+    {
+      "suite": "test-performance-comprehensive.js",
+      "description": "Performance & Load Tests",
+      "exitCode": 1,
+      "duration": 7,
+      "success": false,
+      "stdout": "\u001b[1m🚀 ErenAILab Blog - Kapsamlı Performans Test Paketi Başlatılıyor...\u001b[0m\n\u001b[34m═══════════════════════════════════════════════════════════════\u001b[0m\n\u001b[34m\n=== PERFORMANS TEST KURULUMU ===\u001b[0m\n\u001b[32m✓ src dizini bulundu\u001b[0m\n\u001b[33m\n--- Build Performans Testleri ---\u001b[0m\n\u001b[34m📊 Production Dependencies: 37\u001b[0m\n\u001b[34m📊 Development Dependencies: 12\u001b[0m\n\u001b[32m✓ Production dependency sayısı kabul edilebilir: 37\u001b[0m\n\u001b[32m✓ Development dependency sayısı kabul edilebilir: 12\u001b[0m\n\u001b[33m🔄 Build testi başlatılıyor...\u001b[0m\n\u001b[33m⚠️ Build testi başarısız: Command failed with code 1: Failed to compile.\n\n./src/lib/validation.ts\nModule not found: Can't resolve 'isomorphic-dompurify'\n\nhttps://nextjs.org/docs/messages/module-not-found\n\nImport trace for requested module:\n./src/app/api/comments/route.ts\n\n\n> Build failed because of webpack errors\n\u001b[0m\n\u001b[33m\n--- Bundle Analizi Testleri ---\u001b[0m\n\u001b[32m✓ Next.js config dosyası mevcut\u001b[0m\n\u001b[33m⚠️ Bundle analyzer önerilir\u001b[0m\n\u001b[32m✓ Performance optimizasyonları yapılandırılmış\u001b[0m\n\u001b[33m\n--- Kaynak Kod Performansı Testleri ---\u001b[0m\n\u001b[34m📊 Source Code Size: 0.17MB\u001b[0m\n\u001b[32m✓ Kaynak kod boyutu kabul edilebilir: 0.17MB\u001b[0m\n\u001b[34m📊 Total Files: 38\u001b[0m\n\u001b[34m📊 Components: 0\u001b[0m\n\u001b[34m📊 Pages: 0\u001b[0m\n\u001b[34m📊 Lines of Code: 4943\u001b[0m\n\u001b[32m✓ Lines of code kabul edilebilir: 4943\u001b[0m\n\u001b[34m📊 Average File Size: 130 lines\u001b[0m\n\u001b[32m✓ Ortalama dosya boyutu kabul edilebilir: 130 lines\u001b[0m\n\u001b[33m\n--- Dependency Analizi Testleri ---\u001b[0m\n\u001b[34m📊 node_modules Size: 0.73GB\u001b[0m\n\u001b[32m✓ node_modules boyutu kabul edilebilir: 0.73GB\u001b[0m\n\u001b[34m📊 Installed Packages: 611\u001b[0m\n\u001b[32m✓ Yüklü paket sayısı kabul edilebilir: 611\u001b[0m\n\u001b[34m📊 package-lock.json Size: 0.42MB\u001b[0m\n\u001b[32m✓ package-lock.json boyutu kabul edilebilir: 0.42MB\u001b[0m\n\u001b[33m\n--- Kaynak Kullanımı Testleri ---\u001b[0m\n\u001b[34m📊 Heap Used: 5.59MB\u001b[0m\n\u001b[34m📊 Heap Total: 9.06MB\u001b[0m\n\u001b[32m✓ Heap kullanımı kabul edilebilir: 5.59MB\u001b[0m\n\u001b[34m📊 CPU Cores: 16\u001b[0m\n\u001b[34m📊 Total Memory: 14GB\u001b[0m\n\u001b[34m📊 Free Memory: 3GB\u001b[0m\n\u001b[32m✓ Yeterli boş memory mevcut: 3GB\u001b[0m\n\u001b[33m\n--- Asset Performansı Testleri ---\u001b[0m\n\u001b[34m📊 globals.css Size: 1.12KB\u001b[0m\n\u001b[32m✓ CSS dosya boyutu kabul edilebilir: 1.12KB\u001b[0m\n\u001b[34m📊 Image Files: 0\u001b[0m\n\u001b[33m\n--- Code Complexity Testleri ---\u001b[0m\n\u001b[34m📊 Total Functions: 73\u001b[0m\n\u001b[34m📊 Total Classes: 2\u001b[0m\n\u001b[34m📊 TODO Comments: 0\u001b[0m\n\u001b[34m📊 FIXME Comments: 0\u001b[0m\n\u001b[34m📊 Average Complexity: 15.22\u001b[0m\n\u001b[31m✗ Ortalama kod karmaşıklığı kabul edilebilir: 15.22\u001b[0m\n\u001b[32m✓ FIXME yorumu sayısı: 0\u001b[0m\n\u001b[34m📊 Total Test Time: 7s\u001b[0m\n\u001b[34m\n═══════════════════════════════════════════════════════════════\u001b[0m\n\u001b[1m📊 PERFORMANS TEST SONUÇLARI RAPORU\u001b[0m\n\u001b[34m═══════════════════════════════════════════════════════════════\u001b[0m\n\u001b[33m\n📈 Genel İstatistikler:\u001b[0m\n\u001b[0m   Toplam Test: 15\u001b[0m\n\u001b[32m   Başarılı: 14\u001b[0m\n\u001b[31m   Başarısız: 2\u001b[0m\n\u001b[33m   Başarı Oranı: %93.33\u001b[0m\n\u001b[31m\n❌ Hatalar:\u001b[0m\n\u001b[31m   1. Build hatası: Command failed with code 1: Failed to compile.\n\n./src/lib/validation.ts\nModule not found: Can't resolve 'isomorphic-dompurify'\n\nhttps://nextjs.org/docs/messages/module-not-found\n\nImport trace for requested module:\n./src/app/api/comments/route.ts\n\n\n> Build failed because of webpack errors\n\u001b[0m\n\u001b[31m   2. Ortalama kod karmaşıklığı kabul edilebilir: 15.22\u001b[0m\n\u001b[34m\n📊 Performance Metrikleri:\u001b[0m\n\u001b[34m   Production Dependencies: 37\u001b[0m\n\u001b[34m   Development Dependencies: 12\u001b[0m\n\u001b[34m   productionDeps: 37\u001b[0m\n\u001b[34m   devDeps: 12\u001b[0m\n\u001b[34m   hasNextConfig: true\u001b[0m\n\u001b[34m   hasOptimizations: true\u001b[0m\n\u001b[34m   Source Code Size: 0.17MB\u001b[0m\n\u001b[34m   sourceSize: 0.17\u001b[0m\n\u001b[34m   Total Files: 38\u001b[0m\n\u001b[34m   Components: 0\u001b[0m\n\u001b[34m   Pages: 0\u001b[0m\n\u001b[34m   Lines of Code: 4943\u001b[0m\n\u001b[34m   totalLOC: 4943\u001b[0m\n\u001b[34m   Average File Size: 130 lines\u001b[0m\n\u001b[34m   avgFileSize: 130\u001b[0m\n\u001b[34m   node_modules Size: 0.73GB\u001b[0m\n\u001b[34m   nodeModulesSize: 0.73\u001b[0m\n\u001b[34m   Installed Packages: 611\u001b[0m\n\u001b[34m   packageCount: 611\u001b[0m\n\u001b[34m   package-lock.json Size: 0.42MB\u001b[0m\n\u001b[34m   lockFileSize: 0.42\u001b[0m\n\u001b[34m   Heap Used: 5.59MB\u001b[0m\n\u001b[34m   Heap Total: 9.06MB\u001b[0m\n\u001b[34m   heapUsed: 5.59\u001b[0m\n\u001b[34m   CPU Cores: 16\u001b[0m\n\u001b[34m   Total Memory: 14GB\u001b[0m\n\u001b[34m   Free Memory: 3GB\u001b[0m\n\u001b[34m   freeMemory: 3\u001b[0m\n\u001b[34m   globals.css Size: 1.12KB\u001b[0m\n\u001b[34m   cssSize: 1.12\u001b[0m\n\u001b[34m   Image Files: 0\u001b[0m\n\u001b[34m   Total Functions: 73\u001b[0m\n\u001b[34m   Total Classes: 2\u001b[0m\n\u001b[34m   TODO Comments: 0\u001b[0m\n\u001b[34m   FIXME Comments: 0\u001b[0m\n\u001b[34m   Average Complexity: 15.22\u001b[0m\n\u001b[34m   avgComplexity: 15.22\u001b[0m\n\u001b[34m   fixmeCount: 0\u001b[0m\n\u001b[34m   Total Test Time: 7s\u001b[0m\n\u001b[34m\n📋 Detaylı rapor kaydedildi: C:\\Users\\dikme\\OneDrive\\Desktop\\Blog\\erenailab-blog\\performance-test-report.json\u001b[0m\n\u001b[33m\n⚠️  Performans testlerinin çoğu başarılı, ancak optimizasyonlar yapılabilir.\u001b[0m\n\u001b[34m═══════════════════════════════════════════════════════════════\u001b[0m\n\u001b[1mPerformans test süreci tamamlandı.\u001b[0m\n",
+      "stderr": "",
+      "summary": {
+        "total": 15,
+        "passed": 14,
+        "failed": 2,
+        "successRate": "93.33%"
+      },
+      "metrics": {
+        "Production Dependencies": {
+          "value": 37,
+          "unit": ""
+        },
+        "Development Dependencies": {
+          "value": 12,
+          "unit": ""
+        },
+        "productionDeps": 37,
+        "devDeps": 12,
+        "hasNextConfig": true,
+        "hasOptimizations": true,
+        "Source Code Size": {
+          "value": 0.17,
+          "unit": "MB"
+        },
+        "sourceSize": 0.17,
+        "Total Files": {
+          "value": 38,
+          "unit": ""
+        },
+        "Components": {
+          "value": 0,
+          "unit": ""
+        },
+        "Pages": {
+          "value": 0,
+          "unit": ""
+        },
+        "Lines of Code": {
+          "value": 4943,
+          "unit": ""
+        },
+        "totalLOC": 4943,
+        "Average File Size": {
+          "value": 130,
+          "unit": " lines"
+        },
+        "avgFileSize": 130,
+        "node_modules Size": {
+          "value": 0.73,
+          "unit": "GB"
+        },
+        "nodeModulesSize": 0.73,
+        "Installed Packages": {
+          "value": 611,
+          "unit": ""
+        },
+        "packageCount": 611,
+        "package-lock.json Size": {
+          "value": 0.42,
+          "unit": "MB"
+        },
+        "lockFileSize": 0.42,
+        "Heap Used": {
+          "value": 5.59,
+          "unit": "MB"
+        },
+        "Heap Total": {
+          "value": 9.06,
+          "unit": "MB"
+        },
+        "heapUsed": 5.59,
+        "CPU Cores": {
+          "value": 16,
+          "unit": ""
+        },
+        "Total Memory": {
+          "value": 14,
+          "unit": "GB"
+        },
+        "Free Memory": {
+          "value": 3,
+          "unit": "GB"
+        },
+        "freeMemory": 3,
+        "globals.css Size": {
+          "value": 1.12,
+          "unit": "KB"
+        },
+        "cssSize": 1.12,
+        "Image Files": {
+          "value": 0,
+          "unit": ""
+        },
+        "Total Functions": {
+          "value": 73,
+          "unit": ""
+        },
+        "Total Classes": {
+          "value": 2,
+          "unit": ""
+        },
+        "TODO Comments": {
+          "value": 0,
+          "unit": ""
+        },
+        "FIXME Comments": {
+          "value": 0,
+          "unit": ""
+        },
+        "Average Complexity": {
+          "value": 15.22,
+          "unit": ""
+        },
+        "avgComplexity": 15.22,
+        "fixmeCount": 0,
+        "Total Test Time": {
+          "value": 7,
+          "unit": "s"
+        }
+      },
+      "recommendations": [],
+      "errors": [
+        "Build hatası: Command failed with code 1: Failed to compile.\n\n./src/lib/validation.ts\nModule not found: Can't resolve 'isomorphic-dompurify'\n\nhttps://nextjs.org/docs/messages/module-not-found\n\nImport trace for requested module:\n./src/app/api/comments/route.ts\n\n\n> Build failed because of webpack errors\n",
+        "Ortalama kod karmaşıklığı kabul edilebilir: 15.22"
+      ]
+    },
+    {
+      "suite": "test-api-comprehensive.js",
+      "description": "API Endpoints Tests",
+      "exitCode": 1,
+      "duration": 34,
+      "success": false,
+      "stdout": "\u001b[1m🚀 ErenAILab Blog - Kapsamlı API Test Paketi Başlatılıyor...\u001b[0m\n\u001b[34m═══════════════════════════════════════════════════════════════\u001b[0m\n\u001b[34m\n=== API TEST KURULUMU ===\u001b[0m\n\u001b[32m✓ Development server başlatıldı\u001b[0m\n\u001b[31m✗ Kurulum hatası: Server yanıt vermiyor\u001b[0m\n\u001b[31m\n💥 Test çalıştırma hatası: Server yanıt vermiyor\u001b[0m\n\u001b[34m\n═══════════════════════════════════════════════════════════════\u001b[0m\n\u001b[1m📊 API TEST SONUÇLARI RAPORU\u001b[0m\n\u001b[34m═══════════════════════════════════════════════════════════════\u001b[0m\n\u001b[33m\n📈 Genel İstatistikler:\u001b[0m\n\u001b[0m   Toplam Test: 0\u001b[0m\n\u001b[32m   Başarılı: 0\u001b[0m\n\u001b[31m   Başarısız: 1\u001b[0m\n\u001b[31m   Başarı Oranı: %0\u001b[0m\n\u001b[31m\n❌ Hatalar:\u001b[0m\n\u001b[31m   1. Genel hata: Server yanıt vermiyor\u001b[0m\n\u001b[34m\n📋 Detaylı rapor kaydedildi: C:\\Users\\dikme\\OneDrive\\Desktop\\Blog\\erenailab-blog\\api-test-report.json\u001b[0m\n\u001b[31m\n🚨 ÖNEMLİ API SORUNLARI TESPİT EDİLDİ! Acil müdahale gerekli.\u001b[0m\n\u001b[34m═══════════════════════════════════════════════════════════════\u001b[0m\n\u001b[1mAPI test süreci tamamlandı.\u001b[0m\n",
+      "stderr": "",
+      "summary": {
+        "total": 0,
+        "passed": 0,
+        "failed": 1,
+        "successRate": "0%"
+      },
+      "recommendations": [],
+      "errors": [
+        "Genel hata: Server yanıt vermiyor"
+      ]
+    }
+  ],
+  "recommendations": [
+    "Tüm img elementlerinde alt attribute kullanılmalı.",
+    "Daha fazla interaktif element'te aria-label kullanılmalı.",
+    "layout.tsx'de viewport meta tag eklenmeli.",
+    "Code splitting için daha fazla dynamic import kullanılmalı.",
+    "Performance için React.memo/useMemo kullanılmalı.",
+    "Image optimization için next/image component'i kullanılmalı.",
+    "Daha fazla component reuse edilmeli."
+  ],
+  "errors": [
+    "UI/UX Components Tests: Exit code 1",
+    "Performance & Load Tests: Exit code 1",
+    "API Endpoints Tests: Exit code 1",
+    "0 alt attribute bulundu",
+    "0 aria-label attribute bulundu",
+    "Viewport meta tag mevcut",
+    "0 dynamic import kullanımı bulundu",
+    "0 memoization kullanımı bulundu",
+    "0 Next.js Image component kullanımı",
+    "0 component import kullanımı",
+    "Build hatası: Command failed with code 1: Failed to compile.\n\n./src/lib/validation.ts\nModule not found: Can't resolve 'isomorphic-dompurify'\n\nhttps://nextjs.org/docs/messages/module-not-found\n\nImport trace for requested module:\n./src/app/api/comments/route.ts\n\n\n> Build failed because of webpack errors\n",
+    "Ortalama kod karmaşıklığı kabul edilebilir: 15.22",
+    "Genel hata: Server yanıt vermiyor"
+  ],
+  "totalTime": 46,
+  "suiteSuccessRate": "25.0%",
+  "testSuccessRate": "91.1%",
+  "isProductionReady": false,
+  "generatedAt": "2025-09-06T09:22:52.059Z"
+}

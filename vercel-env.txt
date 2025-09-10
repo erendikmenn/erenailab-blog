@@ -1,0 +1,30 @@
+# Vercel Environment Variables
+# Copy these to Vercel Dashboard → Settings → Environment Variables
+
+# REQUIRED - Database
+DATABASE_URL=postgresql://postgres.cdwwjxfnpphuggqycsoo:D13DjtlCeEXO66sI@aws-1-us-east-2.pooler.supabase.com:6543/postgres
+DIRECT_URL=postgresql://postgres.cdwwjxfnpphuggqycsoo:D13DjtlCeEXO66sI@aws-1-us-east-2.pooler.supabase.com:6543/postgres
+
+# REQUIRED - NextAuth
+NEXTAUTH_URL=https://mehmeterendikmen.com
+NEXTAUTH_SECRET=b9d06afb4e8b31cf9f3d85188e5187973eb095a7e0e07200140037c9596065ad
+
+# OPTIONAL - OAuth (for social login)
+GITHUB_CLIENT_ID=your_github_client_id
+GITHUB_CLIENT_SECRET=your_github_client_secret
+GOOGLE_CLIENT_ID=your_google_client_id
+GOOGLE_CLIENT_SECRET=your_google_client_secret
+
+# Site Configuration
+SITE_URL=https://mehmeterendikmen.com
+SITE_NAME=ErenAILab Blog
+SITE_DESCRIPTION=Academic AI Research Blog
+ADMIN_EMAIL=dikmeneren@hotmail.com
+
+# Production Settings
+NODE_ENV=production
+RATE_LIMIT_MAX=100
+RATE_LIMIT_WINDOW=15
+
+# Build Settings
+SKIP_ENV_VALIDATION=false

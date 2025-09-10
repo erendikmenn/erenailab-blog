@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Allow all bots to access the sitemap and RSS feed
+Sitemap: https://erenailab.com/sitemap.xml
+Sitemap: https://erenailab.com/feed.xml
+
+# High-value content
+Allow: /blog/
+Allow: /categories/
+Allow: /about/
+Allow: /contact/
+Allow: /feed.xml
+
+# Block specific paths (none for now)
+# Disallow: /admin/
+
+# Crawl-delay (optional)
+Crawl-delay: 1
